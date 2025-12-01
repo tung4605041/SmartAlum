@@ -134,11 +134,11 @@
                     <div id="auto-badge" class="hidden absolute right-2 top-4 bg-blue-100 text-blue-600 text-[10px] px-2 py-1 rounded font-bold tracking-wider">AUTO</div>
                 </div>
 
-                <!-- 5-Column Grid (4:2 Ratio) -->
-                <div class="grid grid-cols-6 gap-4">
+                <!-- 5-Column Grid (3:2 Ratio) -->
+                <div class="grid grid-cols-5 gap-4">
                     
                     <!-- Conc (3 ส่วน) -->
-                    <div class="relative group col-span-4">
+                    <div class="relative group col-span-3">
                         <div class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none text-gray-400 group-focus-within:text-blue-500">
                             <i class="fa-solid fa-percent"></i>
                         </div>
@@ -148,7 +148,7 @@
                         <label class="absolute left-9 -top-2 bg-white px-1 text-sm text-blue-500 transition-all 
                                       peer-placeholder-shown:top-4 peer-placeholder-shown:left-10 peer-placeholder-shown:text-gray-500 peer-placeholder-shown:text-sm peer-placeholder-shown:bg-transparent
                                       peer-focus:-top-2 peer-focus:left-9 peer-focus:text-blue-500 peer-focus:text-sm peer-focus:bg-white rounded font-bold">
-                            การละลายสารส้ม(%)
+                            ความเข้มข้น (%)
                         </label>
                     </div>
                     
@@ -196,14 +196,15 @@
                 <div class="font-sans">
                     <div class="font-bold mb-1 text-blue-600 text-sm">สรุปผลการคำนวณ</div>
                      น้ำขุ่น <span id="summary-ntu" class="font-bold text-base">0</span> NTU <br>
-                     ใช้สารส้ม <span id="summary-ppm" class="font-bold text-base">0</span> ppm (กรัม/ลบ.ม.) <br>
-                     ที่ Flow <span id="summary-flow" class="font-bold text-base">0</span> m³/hr (ลบ.ม./ชม.)
+                     ใช้สารส้ม <span id="summary-ppm" class="font-bold text-base">0</span> ppm <br>
+                     ที่ Flow <span id="summary-flow" class="font-bold text-base">0</span> m³/hr
                 </div>
             </div>
 
              <button onclick="resetForm()" class="w-full mt-6 text-gray-400 hover:text-gray-600 text-sm font-sans flex items-center justify-center gap-2 transition-colors">
                 <i class="fa-solid fa-rotate-right"></i> ล้างค่า / เริ่มใหม่
             </button>
+          
         </div>
 
         <!-- Error/Validation Modal (Replaces alert()) -->
@@ -219,7 +220,12 @@
         </div>
 
         <!-- Footer -->
-        <div class="text-blue-400 text-center text-xs mt-1 font-sans p-2">V 1.1 (Nov2025) ENV-IoT DevTeam</div>
+                 <a href="index.html" 
+                    class="block w-full text-center text-blue-500 font-sans font-bold py-5 rounded-xl transform hover:scale-[1.01] transition-all duration-200 text-lg">
+                    </i> Back to Hub
+                    <i class="fa-solid fa-up-right-from-square text-gray-400 text-xs"></i>
+                </a> 
+        <div class="text-gray-400 text-center text-xs mt-1 font-sans p-2">V 1.1.2 (Nov2025) ENV-IoT DevTeam</div>
 
     </div>
 
